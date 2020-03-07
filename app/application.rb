@@ -9,6 +9,8 @@ def call
   else
     resp.write "route not found"
     resp.status = 404
+  end
+  resp.finish
 end  
   
   
