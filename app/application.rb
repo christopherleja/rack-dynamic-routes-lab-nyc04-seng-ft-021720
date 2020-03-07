@@ -7,7 +7,8 @@ def call
   if req.path =="/items"
     resp.write "#{item} costs $#{price}"
   else
-    resp.write "404"
+    resp.write "route not found"
+    
 end  
   
   
