@@ -6,8 +6,8 @@ def call(env)
   
   if req.path.match(/items/)
     item = req.path.split("/items").last
-    if @@items.include? item
-      
+    if @@items.find_by(item)
+      resp.write 
       
   else
     resp.write "Route not found"
