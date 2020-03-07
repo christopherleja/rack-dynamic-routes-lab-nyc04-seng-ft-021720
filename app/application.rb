@@ -20,6 +20,4 @@ def call(env)
   end
   resp.finish
 end  
-  
-  
 end
